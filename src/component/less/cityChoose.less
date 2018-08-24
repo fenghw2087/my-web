@@ -1,0 +1,44 @@
+@import "../../common/base";
+
+.cityBtn {
+	display: inline-block;
+	width: 5em;
+	padding: 3px .5em;
+	margin: 3px;
+	color: #333;
+	font-size: 12px;
+	line-height: 1;
+	text-align: left;
+	cursor: pointer;
+	&:hover {
+		background-color: @primary-color;
+		color: #fff;
+	}
+}
+.cityS {
+	padding-left: 30px;
+	position: relative;
+}
+.cityS_code {
+	position: absolute;
+	color: @primary-color;
+	top: 0;
+	left: 10px;
+	line-height: 25px;
+	font-weight: bold;
+}
+.cityC {
+	width: 100%;
+}
+
+:global {
+	.cityChooser .ant-tabs-nav .ant-tabs-tab {
+		margin-right: 5px;
+		padding: 12px 10px;
+	}
+	.cityChooser {
+		width:450px;
+		background-color: #f9f9f9;
+		box-shadow: 1px 1px 8px rgba(0,0,0,.8);
+	}
+}

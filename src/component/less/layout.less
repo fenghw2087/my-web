@@ -1,0 +1,65 @@
+@import "../../common/base";
+
+.icon-c {
+	height: 100%;
+	width: 30px;
+	text-align: center;
+}
+.icon {
+	color: @primary-color;
+	font-size: 16px;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+}
+.menu {
+	width: 160px;
+	padding: 10px;
+	height: 190px;
+	background-color: #fff;
+	position: relative;
+	z-index: 300;
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 170px;
+		height: 200px;
+		left: -5px;
+		top: -5px;
+		z-index: -1;
+		border: 5px solid #ccc;
+		box-shadow: @box-shadow-base;
+	}
+	&> img {
+		width: 100%;
+	}
+}
+.menuTitle {
+	line-height: 30px;
+	color: #999;
+	text-align: center;
+}
+
+.footer_linkc {
+	text-align: center;
+	.link {
+		display: inline-block;
+		margin: 3px 0;
+		padding: 0 7px;
+		line-height: 1;
+		font-size: 13px;
+		color: #999;
+		border-right: 1px solid;
+		&:hover {
+			text-decoration: underline;
+			color: @primary-color;
+		}
+	}
+}
+.copy {
+	line-height: 1;
+	margin: 15px 0;
+	color: #999;
+	font-size: 13px;
+}
